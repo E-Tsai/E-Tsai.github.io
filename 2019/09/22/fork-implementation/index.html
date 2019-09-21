@@ -55,19 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="写给我的三只猫：黑黑，花花和汤圆。">
-<meta name="keywords" content="songs,music">
+  <meta name="description" content="Fork和它的变体是Unix系统创建进程 (process) 的方法，在这篇文章里我们会探索它是如何实现的。">
+<meta name="keywords" content="systems,technics">
 <meta property="og:type" content="article">
-<meta property="og:title" content="You&#39;re A Cat">
-<meta property="og:url" content="https://etsai.site/2019/09/13/You-Are-A-Cat/index.html">
+<meta property="og:title" content="Linux中的fork()是怎么实现的">
+<meta property="og:url" content="https://etsai.site/2019/09/22/fork-implementation/index.html">
 <meta property="og:site_name" content="So Long">
-<meta property="og:description" content="写给我的三只猫：黑黑，花花和汤圆。">
+<meta property="og:description" content="Fork和它的变体是Unix系统创建进程 (process) 的方法，在这篇文章里我们会探索它是如何实现的。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-21T17:32:59.207Z">
+<meta property="og:updated_time" content="2019-09-21T18:12:34.580Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="You&#39;re A Cat">
-<meta name="twitter:description" content="写给我的三只猫：黑黑，花花和汤圆。">
-  <link rel="canonical" href="https://etsai.site/2019/09/13/You-Are-A-Cat/">
+<meta name="twitter:title" content="Linux中的fork()是怎么实现的">
+<meta name="twitter:description" content="Fork和它的变体是Unix系统创建进程 (process) 的方法，在这篇文章里我们会探索它是如何实现的。">
+  <link rel="canonical" href="https://etsai.site/2019/09/22/fork-implementation/">
 
 
 <script id="page-configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>You're A Cat | So Long</title>
+  <title>Linux中的fork()是怎么实现的 | So Long</title>
   
 
 
@@ -198,7 +198,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="https://etsai.site/2019/09/13/You-Are-A-Cat/">
+    <link itemprop="mainEntityOfPage" href="https://etsai.site/2019/09/22/fork-implementation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Elisa Tsai">
@@ -210,7 +210,7 @@
       <meta itemprop="name" content="So Long">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">You're A Cat
+        <h1 class="post-title" itemprop="name headline">Linux中的fork()是怎么实现的
 
           
         </h1>
@@ -228,19 +228,11 @@
                 
               
 
-              <time title="Created: 2019-09-13 00:06:13" itemprop="dateCreated datePublished" datetime="2019-09-13T00:06:13+08:00">2019-09-13</time>
+              <time title="Created: 2019-09-22 02:02:07 / Modified: 02:12:34" itemprop="dateCreated datePublished" datetime="2019-09-22T02:02:07+08:00">2019-09-22</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-09-22 01:32:59" itemprop="dateModified" datetime="2019-09-22T01:32:59+08:00">2019-09-22</time>
-              </span>
             
           
             <span class="post-meta-item">
@@ -249,7 +241,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Apricity/" itemprop="url" rel="index"><span itemprop="name">Apricity</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a></span>
 
                 
                 
@@ -268,27 +260,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>写给我的三只猫：黑黑，花花和汤圆。</p>
+        <p>Fork和它的变体是Unix系统创建进程 (process) 的方法，在这篇文章里我们会探索它是如何实现的。</p>
 <a id="more"></a>
-
-<h2 id="你是一只猫"><a href="#你是一只猫" class="headerlink" title="你是一只猫"></a>你是一只猫</h2><p>这是一首我自己写/弹唱的歌，可点击<a href="https://soundcloud.com/elisastayshere/youre-a-cat" target="_blank" rel="noopener">这里</a>前往SoundCloud下载。</p>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/670594079&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-
-<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>你是长着毛的鳄鱼<br>You are a furry crocodile<br>长尾巴的小鸡<br>Little chick with long tail<br>不够聪明的狐狸<br>A little fox not sly enough</p>
-<p>你呀每天都吃好多<br>You eat a lot every day<br>心胸也不广阔<br>Always a little stingy<br>我时常觉得你不够爱我<br>I sometimes feel you don’t love me enough</p>
-<p>你是会动的猕猴桃<br>You’re a little kiwi<br>超松软的面包<br>a piece of super puffy bread<br>总是会掉一地毛<br>My floor is covered with you fur</p>
-<p>你每天深夜会打呼噜<br>You’re always snoring at midnight<br>凌晨五点跑酷<br>Parkouring at 5 am<br>一不顺心就气呼呼<br>Always have that grumpy expression on your face</p>
-<p>你是一只猫<br>But You’re a cat<br>你是一只小猫<br>You’re a kitten<br>什么都不知道 没有什么烦恼<br>You don’t know anything and have no troubles<br>整天吃吃喝喝打打闹闹<br>You eat and play all day long </p>
-<p>你是一只猫<br>You’re a cat<br>你是一只小猫<br>You’re a kitten<br>什么都不知道 一直活蹦乱跳<br>You don’t know anything and have no troubles<br>整天吃吃喝喝打打闹闹<br>You eat and play all day long<br>哦我的傻猫<br>Oh my silly old cat</p>
-<p>你是挑剔的美食家<br>You are a picky foodie<br>胖胖的哥斯拉<br>chubby Godzilla<br>眼神总是有点傻<br>so sluggish so laid-back</p>
-<p>每次你敏捷爬上窗帘<br>every time you climb up my curtains<br>来场高空表演<br>and do those acrobatic tricks<br>感觉仿佛小象在跳伞<br>It feels like an elephant doing parashotting</p>
-<p>你是会跑的毛毛虫<br>You’re a running catepillar<br>超凶的小恐龙<br>Roaring little dinosaur<br>小小耳朵毛茸茸<br>I love your little furry ears<br>想要天天和你抱抱<br>Want to cuddle with you all day<br>想要陪你到老<br>Want to stay by you side until the end of time<br>慢慢长大好不好<br>Promise me to grow up slowly my baby</p>
-<p>你是一只猫<br>You’re a cat<br>你是一只小猫<br>You’re a kitten<br>什么都不知道 没有什么烦恼<br>You don’t know anything and have no troubles<br>整天吃吃喝喝打打闹闹<br>You eat and play all day long </p>
-<p>你是一只猫<br>You’re a cat<br>你是一只小猫<br>You’re a kitten<br>什么都不知道 一直活蹦乱跳<br>You don’t know anything and have no troubles<br>整天吃吃喝喝打打闹闹<br>You eat and play all day long<br>哦我的傻猫<br>Oh my silly old cat</p>
-<p>一闪一闪小猫咪<br>Twinkle twinkle little cat<br>你到底藏在哪里<br>How I wonder where you’re at</p>
-<p>你是一只猫<br>You’re a cat<br>你是一只小猫<br>You’re a kitten<br>什么都不知道 一直活蹦乱跳<br>You don’t know anything and have no troubles<br>整天吃吃喝喝打打闹闹<br>You eat and play all day long </p>
-<p>你是一只猫<br>You’re a cat<br>你是一只小猫<br>You’re a kitten<br>什么都不知道 没有什么烦恼<br>You don’t know anything and have no troubles<br>整天吃吃喝喝打打闹闹<br>You eat and play all day long<br>哦我的傻猫<br>Oh my silly old cat</p>
-
+<h2 id="Fork-简介"><a href="#Fork-简介" class="headerlink" title="Fork()简介"></a>Fork()简介</h2><h2 id="Fork-实现"><a href="#Fork-实现" class="headerlink" title="Fork()实现"></a>Fork()实现</h2>
     </div>
 
     
@@ -303,9 +277,9 @@
           
           <div class="post-tags">
             
-              <a href="/tags/songs/" rel="tag"># songs</a>
+              <a href="/tags/systems/" rel="tag"># systems</a>
             
-              <a href="/tags/music/" rel="tag"># music</a>
+              <a href="/tags/technics/" rel="tag"># technics</a>
             
           </div>
         
@@ -315,8 +289,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/12/Hakuna-Matata/" rel="next" title="Hakuna Matata">
-                  <i class="fa fa-chevron-left"></i> Hakuna Matata
+                <a href="/2019/09/13/You-Are-A-Cat/" rel="next" title="You're A Cat">
+                  <i class="fa fa-chevron-left"></i> You're A Cat
                 </a>
               
             </div>
@@ -324,10 +298,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/09/22/fork-implementation/" rel="prev" title="Linux中的fork()是怎么实现的">
-                  Linux中的fork()是怎么实现的 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -376,7 +346,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#你是一只猫"><span class="nav-number">1.</span> <span class="nav-text">你是一只猫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#歌词"><span class="nav-number">2.</span> <span class="nav-text">歌词</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fork-简介"><span class="nav-number">1.</span> <span class="nav-text">Fork()简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fork-实现"><span class="nav-number">2.</span> <span class="nav-text">Fork()实现</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
