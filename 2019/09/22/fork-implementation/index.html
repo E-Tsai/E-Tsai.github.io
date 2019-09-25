@@ -56,7 +56,7 @@
 </script>
 
   <meta name="description" content="Fork和它的变体是Unix系统创建进程 (process) 的方法，在这篇文章里我们会探索它是如何实现的。">
-<meta name="keywords" content="systems,technics">
+<meta name="keywords" content="CN,technics,systems">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux中的fork()是怎么实现的">
 <meta property="og:url" content="https://etsai.site/2019/09/22/fork-implementation/index.html">
@@ -64,7 +64,7 @@
 <meta property="og:description" content="Fork和它的变体是Unix系统创建进程 (process) 的方法，在这篇文章里我们会探索它是如何实现的。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://etsai.site/2019/09/22/fork-implementation/fork.jpg">
-<meta property="og:updated_time" content="2019-09-22T03:23:19.934Z">
+<meta property="og:updated_time" content="2019-09-25T00:23:50.559Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux中的fork()是怎么实现的">
 <meta name="twitter:description" content="Fork和它的变体是Unix系统创建进程 (process) 的方法，在这篇文章里我们会探索它是如何实现的。">
@@ -230,11 +230,19 @@
                 
               
 
-              <time title="Created: 2019-09-22 02:02:07 / Modified: 11:23:19" itemprop="dateCreated datePublished" datetime="2019-09-22T02:02:07+08:00">2019-09-22</time>
+              <time title="Created: 2019-09-22 02:02:07" itemprop="dateCreated datePublished" datetime="2019-09-22T02:02:07+08:00">2019-09-22</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-09-25 08:23:50" itemprop="dateModified" datetime="2019-09-25T08:23:50+08:00">2019-09-25</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -291,9 +299,11 @@
           
           <div class="post-tags">
             
-              <a href="/tags/systems/" rel="tag"># systems</a>
+              <a href="/tags/CN/" rel="tag"># CN</a>
             
               <a href="/tags/technics/" rel="tag"># technics</a>
+            
+              <a href="/tags/systems/" rel="tag"># systems</a>
             
           </div>
         
@@ -303,8 +313,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/13/You-Are-A-Cat/" rel="next" title="You're A Cat">
-                  <i class="fa fa-chevron-left"></i> You're A Cat
+                <a href="/2019/09/13/You-Are-A-Cat/" rel="next" title="你是一只猫">
+                  <i class="fa fa-chevron-left"></i> 你是一只猫
                 </a>
               
             </div>
@@ -312,6 +322,10 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/09/24/source-code-found-online/" rel="prev" title="Source Code Found Online">
+                  Source Code Found Online <i class="fa fa-chevron-right"></i>
+                </a>
               
             </div>
           </div>
@@ -375,7 +389,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -401,7 +415,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">tags</span>
         </a>
       </div>

@@ -55,18 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="Blog Articles  Backup of markdown files and images for Elisa’s blog.  SetupTo install Node.js and hexo: 123456789101112./hexo_install.sh# or# install node.jscurl -o- https://raw.githubusercontent.com/">
+  <meta name="description" content="Blog Articles  Backup of markdown files and images for Elisa’s blog.  SetupTo install Node.js and hexo: 12345678# install node.jscurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.s">
 <meta property="og:type" content="website">
 <meta property="og:title" content="So Long">
 <meta property="og:url" content="https://etsai.site/README.html">
 <meta property="og:site_name" content="So Long">
-<meta property="og:description" content="Blog Articles  Backup of markdown files and images for Elisa’s blog.  SetupTo install Node.js and hexo: 123456789101112./hexo_install.sh# or# install node.jscurl -o- https://raw.githubusercontent.com/">
+<meta property="og:description" content="Blog Articles  Backup of markdown files and images for Elisa’s blog.  SetupTo install Node.js and hexo: 12345678# install node.jscurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.s">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg">
-<meta property="og:updated_time" content="2019-09-21T17:12:51.770Z">
+<meta property="og:updated_time" content="2019-09-25T00:23:50.507Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="So Long">
-<meta name="twitter:description" content="Blog Articles  Backup of markdown files and images for Elisa’s blog.  SetupTo install Node.js and hexo: 123456789101112./hexo_install.sh# or# install node.jscurl -o- https://raw.githubusercontent.com/">
+<meta name="twitter:description" content="Blog Articles  Backup of markdown files and images for Elisa’s blog.  SetupTo install Node.js and hexo: 12345678# install node.jscurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.s">
 <meta name="twitter:image" content="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg">
   <link rel="canonical" href="https://etsai.site/README">
 
@@ -228,7 +228,7 @@
           <h1 id="Blog-Articles"><a href="#Blog-Articles" class="headerlink" title="Blog Articles"></a>Blog Articles</h1><p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="License: CC BY-NC-SA 4.0"></a> </p>
 <p><em>Backup of markdown files and images for <a href="https://etsai.site">Elisa’s blog</a>.</em> </p>
 <h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p>To install Node.js and hexo:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">./hexo_install.sh</span><br><span class="line"><span class="meta">#</span><span class="bash"> or</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> install node.js</span></span><br><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash</span><br><span class="line">wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash</span><br><span class="line">nvm install stable</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> install hexo</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">echo 'PATH="$PATH:./node_modules/.bin"' &gt;&gt; ~/.profile</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> install node.js</span></span><br><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash</span><br><span class="line">wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash</span><br><span class="line">nvm install stable</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> install hexo</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">echo 'PATH="$PATH:./node_modules/.bin"' &gt;&gt; ~/.profile</span><br></pre></td></tr></table></figure>
 
 <p>Initialize blog directory:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;blog name&gt;</span><br></pre></td></tr></table></figure>
@@ -239,6 +239,9 @@
 <p>Change the information in two configure files.</p>
 <p>Add <code>CNAME</code> under the <code>public</code> directory.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">etsai.site</span><br></pre></td></tr></table></figure>
+
+<p>Then:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 <h2 id="Personalize"><a href="#Personalize" class="headerlink" title="Personalize"></a>Personalize</h2><h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><p>Enable </p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
@@ -318,7 +321,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -344,7 +347,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">tags</span>
         </a>
       </div>
