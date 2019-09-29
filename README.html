@@ -14,6 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.0">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.0">
   <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
+  <link rel="alternate" href="/rss2.xml" title="So Long" type="application/atom+xml">
 
 <link rel="stylesheet" href="/css/main.css?v=7.4.0">
 
@@ -63,7 +64,7 @@
 <meta property="og:description" content="Blog Articles  Backup of markdown files and images for Elisa’s blog.  SetupTo install Node.js and hexo: 12345678# install node.jscurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.s">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg">
-<meta property="og:updated_time" content="2019-09-25T00:23:50.507Z">
+<meta property="og:updated_time" content="2019-09-29T01:09:00.176Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="So Long">
 <meta name="twitter:description" content="Blog Articles  Backup of markdown files and images for Elisa’s blog.  SetupTo install Node.js and hexo: 12345678# install node.jscurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.s">
@@ -228,7 +229,7 @@
           <h1 id="Blog-Articles"><a href="#Blog-Articles" class="headerlink" title="Blog Articles"></a>Blog Articles</h1><p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="License: CC BY-NC-SA 4.0"></a> </p>
 <p><em>Backup of markdown files and images for <a href="https://etsai.site">Elisa’s blog</a>.</em> </p>
 <h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p>To install Node.js and hexo:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> install node.js</span></span><br><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash</span><br><span class="line">wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash</span><br><span class="line">nvm install stable</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> install hexo</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">echo 'PATH="$PATH:./node_modules/.bin"' &gt;&gt; ~/.profile</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> install node.js</span><br><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash</span><br><span class="line">wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash</span><br><span class="line">nvm install stable</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> install hexo</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">echo 'PATH="$PATH:./node_modules/.bin"' &gt;&gt; ~/.profile</span><br></pre></td></tr></table></figure>
 
 <p>Initialize blog directory:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;blog name&gt;</span><br></pre></td></tr></table></figure>
@@ -258,6 +259,26 @@
 
 <p>…under <code>&lt;div class=&quot;post-meta&quot;&gt;</code>.</p>
 <p>Now we can use the <code>top</code> tag in the JSON header to pin certain articles.</p>
+<h3 id="Add-RSS-Feed"><a href="#Add-RSS-Feed" class="headerlink" title="Add RSS Feed"></a>Add RSS Feed</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<p>Configure this plugin in <code>_config.yml</code>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br><span class="line">  content_limit: 140</span><br><span class="line">  content_limit_delim: &apos; &apos;</span><br><span class="line">  order_by: -date</span><br><span class="line">  icon: icon.png</span><br><span class="line">  autodiscovery: true</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>type</strong> - Feed type. (atom/rss2)</li>
+<li><strong>path</strong> - Feed path. (Default: atom.xml/rss2.xml)</li>
+<li><strong>limit</strong> - Maximum number of posts in the feed (Use <code>0</code> or <code>false</code> to show all posts)</li>
+<li><strong>hub</strong> - URL of the PubSubHubbub hubs (Leave it empty if you don’t use it)</li>
+<li><strong>content</strong> - (optional) set to ‘true’ to include the contents of the entire post in the feed.</li>
+<li><strong>content_limit</strong> - (optional) Default length of post content used in summary. Only used, if <strong>content</strong> setting is false and no custom post description present.</li>
+<li><strong>content_limit_delim</strong> - (optional) If <strong>content_limit</strong> is used to shorten post contents, only cut at the last occurrence of this delimiter before reaching the character limit. Not used by default.</li>
+<li><strong>order_by</strong> - Feed order-by. (Default: -date)</li>
+<li><strong>icon</strong> - (optional) Custom feed icon. Defaults to a gravatar of email specified in the main config.</li>
+<li><strong>autodiscovery</strong> - Add feed <a href="http://www.rssboard.org/rss-autodiscovery" target="_blank" rel="noopener">autodiscovery</a>. (Default: <code>true</code> )<ul>
+<li>Many themes already offer this feature, so you may also need to adjust the theme’s config if you wish to disable it.</li>
+</ul>
+</li>
+</ul>
 
         
       </div>
@@ -306,7 +327,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Blog-Articles"><span class="nav-number">1.</span> <span class="nav-text">Blog Articles</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Setup"><span class="nav-number">1.1.</span> <span class="nav-text">Setup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Personalize"><span class="nav-number">1.2.</span> <span class="nav-text">Personalize</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Images"><span class="nav-number">1.2.1.</span> <span class="nav-text">Images</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Indexing"><span class="nav-number">1.2.2.</span> <span class="nav-text">Indexing</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Blog-Articles"><span class="nav-number">1.</span> <span class="nav-text">Blog Articles</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Setup"><span class="nav-number">1.1.</span> <span class="nav-text">Setup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Personalize"><span class="nav-number">1.2.</span> <span class="nav-text">Personalize</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Images"><span class="nav-number">1.2.1.</span> <span class="nav-text">Images</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Indexing"><span class="nav-number">1.2.2.</span> <span class="nav-text">Indexing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-RSS-Feed"><span class="nav-number">1.2.3.</span> <span class="nav-text">Add RSS Feed</span></a></li></ol></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -353,6 +374,11 @@
       </div>
     
   </nav>
+  <div class="feed-link motion-element">
+    <a href="/rss2.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
 
 
 

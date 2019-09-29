@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>So Long</title>
+    <link>https://etsai.site/</link>
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>I comment my code</description>
+    <pubDate>Wed, 25 Sep 2019 00:32:03 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Source Code Found Online</title>
+      <link>https://etsai.site/2019/09/24/source-code-found-online/</link>
+      <guid>https://etsai.site/2019/09/24/source-code-found-online/</guid>
+      <pubDate>Tue, 24 Sep 2019 09:16:16 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;An alignment chart of source code found online. &lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/2019/09/24/source-code-found-online/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Linux中的fork()是怎么实现的</title>
+      <link>https://etsai.site/2019/09/22/fork-implementation/</link>
+      <guid>https://etsai.site/2019/09/22/fork-implementation/</guid>
+      <pubDate>Sat, 21 Sep 2019 18:02:07 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Fork和它的变体是Unix系统创建进程 (process) 的方法，在这篇文章里我们会探索它是如何实现的。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/2019/09/22/fork-implementation/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>你是一只猫</title>
+      <link>https://etsai.site/2019/09/13/You-Are-A-Cat/</link>
+      <guid>https://etsai.site/2019/09/13/You-Are-A-Cat/</guid>
+      <pubDate>Thu, 12 Sep 2019 16:06:13 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;写给我的三只猫：黑黑，花花和汤圆。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/2019/09/13/You-Are-A-Cat/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Hakuna Matata</title>
+      <link>https://etsai.site/2019/09/12/Hakuna-Matata/</link>
+      <guid>https://etsai.site/2019/09/12/Hakuna-Matata/</guid>
+      <pubDate>Thu, 12 Sep 2019 15:33:32 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;I come back to watch these videos every time I feel uneasy, anxious or upset about certain trivial life events…&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/2019/09/12/Hakuna-Matata/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Total Perspective Vortex</title>
+      <link>https://etsai.site/2019/09/05/Total-Perspective-Vortex-EN/</link>
+      <guid>https://etsai.site/2019/09/05/Total-Perspective-Vortex-EN/</guid>
+      <pubDate>Thu, 05 Sep 2019 11:33:57 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Adapted from sci-fi: Restaurant at the End of the Universe, chapter 10 and chapter 11.&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/2019/09/05/Total-Perspective-Vortex-EN/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>你的第一个Linux内核补丁</title>
+      <link>https://etsai.site/2019/04/18/your-first-linux-kernel-patch/</link>
+      <guid>https://etsai.site/2019/04/18/your-first-linux-kernel-patch/</guid>
+      <pubDate>Thu, 18 Apr 2019 02:17:15 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这是一个linux内核补丁提交教程，其中有不少内容来自&lt;a href=&quot;https://kernelnewbies.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kernel Newbies&lt;/a&gt;，也有部分自己创作的。&lt;br&gt;书籍推荐: &lt;a href=&quot;https://lwn.net/Kernel/LDD3/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Linux Device Drivers&lt;/a&gt;&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/2019/04/18/your-first-linux-kernel-patch/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Linux内核补丁的哲学</title>
+      <link>https://etsai.site/2019/03/11/philosophy-of-linux-kernel-patches/</link>
+      <guid>https://etsai.site/2019/03/11/philosophy-of-linux-kernel-patches/</guid>
+      <pubDate>Mon, 11 Mar 2019 02:38:22 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;a href=&quot;https://kernelnewbies.org/PatchPhilosophy&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;英文原文&lt;/a&gt;&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/2019/03/11/philosophy-of-linux-kernel-patches/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Total Perspective Vortex (绝对透视漩涡)</title>
+      <link>https://etsai.site/2018/10/20/Total-Perspective-Vortex/</link>
+      <guid>https://etsai.site/2018/10/20/Total-Perspective-Vortex/</guid>
+      <pubDate>Sat, 20 Oct 2018 15:48:12 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这个小短漫改编自科幻小说《宇宙尽头的餐馆》第十章和第十一章。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/2018/10/20/Total-Perspective-Vortex/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Hi There</title>
+      <link>https://etsai.site/2018/10/20/guide/</link>
+      <guid>https://etsai.site/2018/10/20/guide/</guid>
+      <pubDate>Sat, 20 Oct 2018 15:29:39 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;Hi-There&quot;&gt;&lt;a href=&quot;#Hi-There&quot; class=&quot;headerlink&quot; title=&quot;Hi There&quot;&gt;&lt;/a&gt;Hi There&lt;/h1&gt;&lt;p&gt;Welcome welcome! Please take a look at &lt;a href=&quot;https://etsai.site/2019/09/05/Total-Perspective-Vortex-EN/&quot;&gt;my proudest work&lt;/a&gt; (&lt;a href=&quot;https://etsai.site/2018/10/20/Total-Perspective-Vortex/&quot;&gt;Chinese version&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;你好哇，我是Elisa，这是我的个人博客，我在这里主要使用中文写作。&lt;/p&gt;
+&lt;h1 id=&quot;Articles&quot;&gt;&lt;a href=&quot;#Articles&quot; class=&quot;headerlink&quot; title=&quot;Articles&quot;&gt;&lt;/a&gt;Articles&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;技术:  &lt;a href=&quot;http://etsai.site/categories/CS/&quot;&gt;Computer Science&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;漫画:  &lt;a href=&quot;http://etsai.site/tags/comics/&quot;&gt;Comics&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;绘画/歌曲:  &lt;a href=&quot;http://etsai.site/categories/Apricity/&quot;&gt;Songs and Paintings&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;随笔：  &lt;a href=&quot;http://etsai.site/categories/Memo/&quot;&gt;Memo&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;小收藏:  &lt;a href=&quot;http://etsai.site/tags/entry-stamp/&quot;&gt;Entry Stamp&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All the content in this blog is under a &lt;a rel=&quot;noopener&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;, whatever it means.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;a rel=&quot;noopener&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/2018/10/20/guide/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>音频格式：MP3, WAV的对比与实现</title>
+      <link>https://etsai.site/2018/07/19/music-format/</link>
+      <guid>https://etsai.site/2018/07/19/music-format/</guid>
+      <pubDate>Thu, 19 Jul 2018 13:48:45 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;音频文件格式相关。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/2018/07/19/music-format/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
