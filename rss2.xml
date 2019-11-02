@@ -8,8 +8,24 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I comment my code</description>
-    <pubDate>Wed, 25 Sep 2019 00:32:03 GMT</pubDate>
+    <pubDate>Sat, 02 Nov 2019 15:06:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Full Fathom Five</title>
+      <link>https://etsai.site/full-fathom-five/</link>
+      <guid>https://etsai.site/full-fathom-five/</guid>
+      <pubDate>Sat, 02 Nov 2019 14:58:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;写给我的三只猫：黑黑，花花和汤圆。&lt;/p&gt;
+&lt;p&gt;An Acapella rearrangement.&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/full-fathom-five/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Source Code Found Online</title>
@@ -153,21 +169,6 @@
       
       
       <comments>https://etsai.site/guide/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>音频格式：MP3, WAV的对比与实现</title>
-      <link>https://etsai.site/music-format/</link>
-      <guid>https://etsai.site/music-format/</guid>
-      <pubDate>Thu, 19 Jul 2018 13:48:45 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;音频文件格式相关。&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>https://etsai.site/music-format/#disqus_thread</comments>
     </item>
     
   </channel>
