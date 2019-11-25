@@ -57,7 +57,7 @@
 </script>
 
   <meta name="description" content="这是一个linux内核补丁提交教程，其中有不少内容来自Kernel Newbies，也有部分自己创作的。书籍推荐: Linux Device Drivers">
-<meta name="keywords" content="CN,technics,systems,translated">
+<meta name="keywords" content="systems,CN,technics,translated">
 <meta property="og:type" content="article">
 <meta property="og:title" content="你的第一个Linux内核补丁">
 <meta property="og:url" content="https://etsai.site/your-first-linux-kernel-patch/index.html">
@@ -348,7 +348,7 @@
 
 <p>请注意：引起warning的patch是不会被接受的。</p>
 <p>编译太慢了？你可以只编译kernel的一部分：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">make drivers/staging/ </span><br><span class="line"><span class="meta">#</span> does not link the modules</span><br><span class="line"></span><br><span class="line">make M=drivers/staging </span><br><span class="line"><span class="meta">#</span> links modules in previously build vmlinux file: might fail when .config is changed or a newer git tree is rebased</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">make drivers/staging/ </span><br><span class="line"><span class="meta">#</span><span class="bash"> does not link the modules</span></span><br><span class="line"></span><br><span class="line">make M=drivers/staging </span><br><span class="line"><span class="meta">#</span><span class="bash"> links modules <span class="keyword">in</span> previously build vmlinux file: might fail when .config is changed or a newer git tree is rebased</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>安装</strong>：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo make modules_install install</span><br></pre></td></tr></table></figure>
@@ -365,11 +365,11 @@
 
 <p><strong>回滚</strong></p>
 <p>Oops! 你的patch有问题？你也许想回滚到这个patch开始之前：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard HEAD</span><br><span class="line"><span class="meta">#</span> HEAD can be replaced any other commit hash</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard HEAD</span><br><span class="line"><span class="meta">#</span><span class="bash"> HEAD can be replaced any other commit <span class="built_in">hash</span></span></span><br></pre></td></tr></table></figure>
 
 <h2 id="发送你的patch"><a href="#发送你的patch" class="headerlink" title="发送你的patch"></a>发送你的patch</h2><p>你已经来到了最后一步：发送你的补丁。</p>
 <h3 id="email软件"><a href="#email软件" class="headerlink" title="email软件"></a>email软件</h3><p>我们推荐你使用git-email或是mutt来发送你的patch：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install esmtp</span><br><span class="line">sudo apt-get install mutt</span><br><span class="line"><span class="meta">#</span> or</span><br><span class="line">sudo apt-get install git-email</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install esmtp</span><br><span class="line">sudo apt-get install mutt</span><br><span class="line"><span class="meta">#</span><span class="bash"> or</span></span><br><span class="line">sudo apt-get install git-email</span><br></pre></td></tr></table></figure>
 
 <p>你也许想要把vim作为你的默认text editor:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo update-alternatives --config editor</span><br></pre></td></tr></table></figure>
@@ -425,7 +425,7 @@
 
 <p>I learned this one the hard way :(</p>
 <h3 id="Patchset"><a href="#Patchset" class="headerlink" title="Patchset"></a>Patchset</h3><p>如果你想一次提交多个patch (而且它们是相关的)，你可以把它们放进一个patchset里。 </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git format-patch -n --subject-prefix="PATCH vY" --cover-letter -o /tmp/</span><br><span class="line"><span class="meta">#</span> or you can use commit hash to do this: &lt;hash1&gt;^..&lt;hash2&gt;</span><br><span class="line"></span><br><span class="line">git send-email /tmp/*.patch</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git format-patch -n --subject-prefix="PATCH vY" --cover-letter -o /tmp/</span><br><span class="line"><span class="meta">#</span><span class="bash"> or you can use commit <span class="built_in">hash</span> to <span class="keyword">do</span> this: &lt;hash1&gt;^..&lt;hash2&gt;</span></span><br><span class="line"></span><br><span class="line">git send-email /tmp/*.patch</span><br></pre></td></tr></table></figure>
 
 <p>patchset也要遵循其他的规则 (比如version)，你还需要编辑/tmp/里的cover-letter: 描述这个patchset做的事情。更多细节请阅读<a href="https://kernelnewbies.org/PatchPhilosophy" target="_blank" rel="noopener">Linux内核补丁的哲学</a>。</p>
 <h3 id="发送patch"><a href="#发送patch" class="headerlink" title="发送patch"></a>发送patch</h3><p><strong>编写commit</strong></p>
@@ -436,7 +436,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git show HEAD</span><br><span class="line"></span><br><span class="line"># if you want to revise it:</span><br><span class="line">git commit --amend -v</span><br><span class="line"></span><br><span class="line"># You might want to make sure your commit looks fine</span><br><span class="line">git log --pretty=oneline --abbrev-commit HEAD^</span><br></pre></td></tr></table></figure>
 
 <p><strong>维护者们</strong><br>你需要把这个patch发给你修改的部分的维护者们 (another perl file for this)：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git show HEAD | perl scripts/get_maintainer.pl --separator , --nokeywords --nogit --nogit-fallback --norolestats --nol</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> or</span><br><span class="line">perl scripts/get_maintainer.pl --separator , --nokeywords --nogit --nogit-fallback --norolestats --nol -f path/to/your/file</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git show HEAD | perl scripts/get_maintainer.pl --separator , --nokeywords --nogit --nogit-fallback --norolestats --nol</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> or</span></span><br><span class="line">perl scripts/get_maintainer.pl --separator , --nokeywords --nogit --nogit-fallback --norolestats --nol -f path/to/your/file</span><br></pre></td></tr></table></figure>
 
 <p>这个perl文件会告诉你这个patch应该发给哪些人。</p>
 <p><strong>patch生成&amp;发送</strong></p>
@@ -469,11 +469,11 @@
           
           <div class="post-tags">
             
+              <a href="/tags/systems/" rel="tag"># systems</a>
+            
               <a href="/tags/CN/" rel="tag"># CN</a>
             
               <a href="/tags/technics/" rel="tag"># technics</a>
-            
-              <a href="/tags/systems/" rel="tag"># systems</a>
             
               <a href="/tags/translated/" rel="tag"># translated</a>
             
@@ -561,7 +561,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -587,7 +587,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">tags</span>
         </a>
       </div>

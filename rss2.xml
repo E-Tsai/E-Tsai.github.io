@@ -8,8 +8,39 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I comment my code</description>
-    <pubDate>Sat, 02 Nov 2019 15:06:15 GMT</pubDate>
+    <pubDate>Fri, 22 Nov 2019 14:01:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Spectres And Meltdown</title>
+      <link>https://etsai.site/spectres-and-meltdown/</link>
+      <guid>https://etsai.site/spectres-and-meltdown/</guid>
+      <pubDate>Thu, 21 Nov 2019 05:17:58 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;从流水线 (pipeline) 到乱序执行 (out-of-order)，处理器的指令级并行保证了其性能上的绝大提升。但是在性能提升的同时，安全性的问题也随之出现。这篇博客主要介绍预测执行攻击。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/spectres-and-meltdown/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>GFW-101</title>
+      <link>https://etsai.site/GFW-101/</link>
+      <guid>https://etsai.site/GFW-101/</guid>
+      <pubDate>Thu, 21 Nov 2019 05:08:55 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;GFW-The-Digital-Berlin-Wall-of-China&quot;&gt;&lt;a href=&quot;#GFW-The-Digital-Berlin-Wall-of-China&quot; class=&quot;headerlink&quot; title=&quot;GFW: The Digital Berlin Wall of China&quot;&gt;&lt;/a&gt;GFW: The Digital Berlin Wall of China&lt;/h2&gt;&lt;p&gt;On September 20, 1987, the first email from China wrote: “Across the Great Wall we can reach every corner in the world.”&lt;/p&gt;
+&lt;p&gt;The prophecy has unfortunately come true.&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/GFW-101/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Full Fathom Five</title>
@@ -130,45 +161,6 @@
       
       
       <comments>https://etsai.site/philosophy-of-linux-kernel-patches/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Total Perspective Vortex (绝对透视漩涡)</title>
-      <link>https://etsai.site/Total-Perspective-Vortex/</link>
-      <guid>https://etsai.site/Total-Perspective-Vortex/</guid>
-      <pubDate>Sat, 20 Oct 2018 15:48:12 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;这个小短漫改编自科幻小说《宇宙尽头的餐馆》第十章和第十一章。&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>https://etsai.site/Total-Perspective-Vortex/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Hi There</title>
-      <link>https://etsai.site/guide/</link>
-      <guid>https://etsai.site/guide/</guid>
-      <pubDate>Sat, 20 Oct 2018 15:29:39 GMT</pubDate>
-      <description>
-      
-        &lt;h1 id=&quot;Hi-There&quot;&gt;&lt;a href=&quot;#Hi-There&quot; class=&quot;headerlink&quot; title=&quot;Hi There&quot;&gt;&lt;/a&gt;Hi There&lt;/h1&gt;&lt;p&gt;Welcome welcome! &lt;/p&gt;
-&lt;p&gt;你好哇，我是Elisa，这是我的个人博客，我在这里主要使用中文写作。&lt;/p&gt;
-&lt;h1 id=&quot;Articles&quot;&gt;&lt;a href=&quot;#Articles&quot; class=&quot;headerlink&quot; title=&quot;Articles&quot;&gt;&lt;/a&gt;Articles&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;技术: &lt;a href=&quot;http://etsai.site/categories/CS/&quot;&gt;Computer Science&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;漫画: &lt;a href=&quot;http://etsai.site/tags/comics/&quot;&gt;Comics&lt;/a&gt;: &lt;a href=&quot;https://etsai.site/Total-Perspective-Vortex-EN/&quot;&gt;my proudest work&lt;/a&gt; (&lt;a href=&quot;https://etsai.site/Total-Perspective-Vortex/&quot;&gt;Chinese version&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;绘画/歌曲: &lt;a href=&quot;http://etsai.site/categories/Apricity/&quot;&gt;Songs and Paintings&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;随笔: &lt;a href=&quot;http://etsai.site/categories/Memo/&quot;&gt;Memo&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;小收藏: &lt;a href=&quot;http://etsai.site/tags/entry-stamp/&quot;&gt;Entry Stamp&lt;/a&gt; &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;All the content in this blog is under a &lt;a rel=&quot;noopener&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;, whatever it means.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;a rel=&quot;noopener&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>https://etsai.site/guide/#disqus_thread</comments>
     </item>
     
   </channel>

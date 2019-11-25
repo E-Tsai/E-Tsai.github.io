@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=7.4.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
+  <link rel="alternate" href="/rss2.xml" title="So Long" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="GFW: The Digital Berlin Wall of ChinaOn September 20, 1987, the first email from China wrote: “Across the Great Wall we can reach every corner in the world.” The prophecy has unfortunately come true.">
+<meta name="keywords" content="EN,security,censorship-monitoring,systems">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GFW-101">
+<meta property="og:url" content="https://etsai.site/GFW-101/index.html">
+<meta property="og:site_name" content="So Long">
+<meta property="og:description" content="GFW: The Digital Berlin Wall of ChinaOn September 20, 1987, the first email from China wrote: “Across the Great Wall we can reach every corner in the world.” The prophecy has unfortunately come true.">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://etsai.site/GFW-101/GFW-topology.png">
+<meta property="og:image" content="http://2oqz471sa19h3vbwa53m33yj-wpengine.netdna-ssl.com/wp-content/uploads/2017/08/cable-map-1069.jpg">
+<meta property="og:image" content="https://66.media.tumblr.com/0512dd3c50d99f1b079c0bfbaf234a11/tumblr_pbamunJxiG1v3zfd4o1_1280.jpg">
+<meta property="og:updated_time" content="2019-11-25T05:41:00.729Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GFW-101">
+<meta name="twitter:description" content="GFW: The Digital Berlin Wall of ChinaOn September 20, 1987, the first email from China wrote: “Across the Great Wall we can reach every corner in the world.” The prophecy has unfortunately come true.">
+<meta name="twitter:image" content="https://etsai.site/GFW-101/GFW-topology.png">
+  <link rel="canonical" href="https://etsai.site/GFW-101/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>GFW-101 | So Long</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">So Long</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">And Thanks For All The Fish</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://etsai.site/GFW-101/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Elisa Tsai">
+      <meta itemprop="description" content="I comment my code">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="So Long">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">GFW-101
+
+          
+        </h1>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-11-21 13:08:55" itemprop="dateCreated datePublished" datetime="2019-11-21T13:08:55+08:00">2019-11-21</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-11-25 13:41:00" itemprop="dateModified" datetime="2019-11-25T13:41:00+08:00">2019-11-25</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="GFW-The-Digital-Berlin-Wall-of-China"><a href="#GFW-The-Digital-Berlin-Wall-of-China" class="headerlink" title="GFW: The Digital Berlin Wall of China"></a>GFW: The Digital Berlin Wall of China</h2><p>On September 20, 1987, the first email from China wrote: “Across the Great Wall we can reach every corner in the world.”</p>
+<p>The prophecy has unfortunately come true.</p>
+<a id="more"></a>
+
+<h2 id="A-Brief-Introduction"><a href="#A-Brief-Introduction" class="headerlink" title="A Brief Introduction"></a>A Brief Introduction</h2><p>In general, a firewall is a device that monitors network traffic and decides whether to block specific packages based on given rules.</p>
+<p>On September 3, 2002, google.com was blocked in China by DNS polluting, debutting GFW to the public.</p>
+<img src="/GFW-101/GFW-topology.png">
+
+<h3 id="Filtering"><a href="#Filtering" class="headerlink" title="Filtering"></a>Filtering</h3><p>From top to down, GFW filters Internet traffic by:</p>
+<ul>
+<li><p>QoS (Quality of Service) filtering,</p>
+</li>
+<li><p>DNS spoofing (cache poisoning), filtering and redirection,</p>
+</li>
+<li><p>Email protocols keyword filtering (SMTP, IMAP4, POP3),</p>
+</li>
+<li><p>Man-in-the-middle attack with keyword filtering,</p>
+</li>
+<li><p>URL filtering (filters snapshots),</p>
+</li>
+<li><p>TCP reset attack &amp; packet forging,</p>
+</li>
+<li><p>IP blackholes.</p>
+</li>
+</ul>
+<p>The filtering systems are regionally implemented, instead of having a nation-wide standard. The filtering scheme differs from one <a href="https://en.wikipedia.org/wiki/Internet_service_provider" target="_blank" rel="noopener">ISP</a> to another. Mostly attempts to visit blocked websites without using any circumvent tools are blocked by local ISP.  </p>
+<h3 id="Probing"><a href="#Probing" class="headerlink" title="Probing"></a>Probing</h3><p>To circumvent GFW, there are several commonly used strategies, including using VPN, Tor, <a href="https://en.wikipedia.org/wiki/Deep_packet_inspection" target="_blank" rel="noopener">DPI</a> resistant tools and so on.</p>
+<p>Implemented mainly at <a href="https://en.wikipedia.org/wiki/Internet_exchange_point" target="_blank" rel="noopener">IXP</a>s, the probing system of GFW works differently from filtering. Researchers of Tor found that the GFW spoofs on connections based on TLS encryption by checking binary garbage: any connection to the 443 port from mainland China will be probed nearly real-time. The aim is to sniff out the anti-censorship tools before the user creates an encrypted connection. </p>
+<p>The GFW has the ability to monitor and block VPN connections based on PPTP and L2TP.  Since January 2015, VPNs based on L2TP/IPSec and PPTP protocols has been taken down.</p>
+<p>By extracting traffic packets and analyzing their features, the GFW can identify and block even encrypted packets. Studies have shown that the GFW can detect shadowsocks traffic based on CNN (convolutional neural networks).  However, this scheme is yet to be implemented on a larger scale, and adding garbling data to the traffic can theoretically confuse the network. </p>
+<h2 id="The-Walls-Are-Closing-In"><a href="#The-Walls-Are-Closing-In" class="headerlink" title="The Walls Are Closing In"></a>The Walls Are Closing In</h2><p>Below is a map of submarine cables, <a href="https://www.visualcapitalist.com/wp-content/uploads/2017/08/submarine-cables-full.html" target="_blank" rel="noopener">full image</a>: <img src="http://2oqz471sa19h3vbwa53m33yj-wpengine.netdna-ssl.com/wp-content/uploads/2017/08/cable-map-1069.jpg" alt></p>
+<p>There are only 3 submarine cable connection points in mainland China: Shanghai (6 cables), Qingdao (2 cables)  and Shantou (3 cables), making it very easy to control the incoming and outgoing information.</p>
+<p>For comparison, Taiwan has 9 cables, Hong Kong and South Korea each have 11 cables, while Japan has at least 11.</p>
+<p>After July 2009, Internet in Xinjiang was taken down for 312 days. </p>
+<p>The GFW might has the ability to detect and analyze large amounts of encrypted traffic and block the user’s IP address temporarily. Since May 6, 2011, Internet companies, universities and research institutes in mainland China, including the Chinese Academy of Sciences, are having trouble with connection to international websites. It is said that the move is a test carried out by the Chinese authorities to investigate the public response, gradually cut off most people’s visits to international websites. Instead of maintaining a blacklist of websites that annoys the government, keeping a white list is way simpler.</p>
+<p>Despite all international websites are inaccessible, including MSN, iTunes Store, access to domestic websites remains normal. But when using overseas DNS to resolve domain names, you will not be able to resolve any domain names because the DNS server is blocked, thus the domestic websites is not accessible for overseas users, constructing a two-way blocking system.</p>
+<p>In October 2012, Google’s servers in Beijing were blocked by state-level backbone routers for a long time, giving “connection timeout” errors when accessing users in mainland China, resulting in a large number of malfunction of <a href="https://en.wikipedia.org/wiki/Hosts_(file)" target="_blank" rel="noopener">Hosts</a>-based proxies (who used Google Beijing servers as reverse proxy). </p>
+<p>Forming the de facto biggest LAN on this planet, the impact of GFW on Chinese people’s life are more than just on information level. Social media websites like FB, Twitter, Instagram, Snapchat are all blocked, while Wechat, which is more willing to corporate with the government, is commonly used. Censorship on social media deserves its own blog post, we’ll save it for later.</p>
+<p>Having substitutes for almost every Internet service available: Baidu (google), Weibo (Twitter), Wechat (Facebook), Ali Pay (Pay Pal), many claim that even being completed disconnected to International Internet, their life won’t be affected at all. </p>
+<h3 id="And-Another-Thing"><a href="#And-Another-Thing" class="headerlink" title="And Another Thing"></a>And Another Thing</h3><p>Being involved in debates about GFW for a long time, I witnessed how people internalize and justify this digital Berlin Wall of China.  It’s both sad and fascinating how researchers from a lot of universities, including Beijing Institute of Technology, Beijing University of Posts and Telecommunications, National University of Defense Technology, etc., are vigorously engaged in strengthening the GFW.</p>
+<p>On March 25, 2019, three researchers from BIT applied for patent of “V2ray traffic detection based on LSMN”. If V2ray, a complicated version of shadowsocks, is taken down, that would be a very bad news. This is an endless arm race. Researchers of GFW are relentlessly developing new tools to detect encrypted data, and researchers against it are developing tools to analyze GFW and new protocols to bypass it. </p>
+<p>Many contributors to the GFW are not aware of what exactly they’re doing. Without even thinking of future social impact, they signed the confidential agreement. GFW faces the same ethical dilemma as the Manhattan Project. Science is neutral, but scientists are not by nature neutral.</p>
+<p><img src="https://66.media.tumblr.com/0512dd3c50d99f1b079c0bfbaf234a11/tumblr_pbamunJxiG1v3zfd4o1_1280.jpg" alt></p>
+<p>They only care and are only allowed to care about maintaining “security”, without doubting the definition of it. Alas, my friend, all in all, you’re just another brick in the wall.</p>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><p><a href="http://www.chinagfw.org/2009/08/gfw_30.html" target="_blank" rel="noopener">阅后即焚</a> </p>
+<p><a href="https://www.visualcapitalist.com/submarine-cables/" target="_blank" rel="noopener">World Cable Visualization</a> </p>
+<p><a href="https://www.ruanyifeng.com/blog/2010/08/cable_world_map.html" target="_blank" rel="noopener">世界海底光缆分布图</a> </p>
+<p><a href="https://www.svlik.com/1804.html" target="_blank" rel="noopener">Tests on GFW</a> </p>
+<p><a href="https://en.wikipedia.org/wiki/Great_Firewall" target="_blank" rel="noopener">GFW</a>, <a href="https://zh.wikipedia.org/wiki/防火长城" target="_blank" rel="noopener">中文</a> </p>
+<p><a href="https://en.wikipedia.org/wiki/Internet_censorship_in_China" target="_blank" rel="noopener">Internet Censorship In China</a> </p>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/EN/" rel="tag"># EN</a>
+            
+              <a href="/tags/security/" rel="tag"># security</a>
+            
+              <a href="/tags/censorship-monitoring/" rel="tag"># censorship-monitoring</a>
+            
+              <a href="/tags/systems/" rel="tag"># systems</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/full-fathom-five/" rel="next" title="Full Fathom Five">
+                  <i class="fa fa-chevron-left"></i> Full Fathom Five
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/spectres-and-meltdown/" rel="prev" title="Spectres And Meltdown">
+                  Spectres And Meltdown <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#GFW-The-Digital-Berlin-Wall-of-China"><span class="nav-number">1.</span> <span class="nav-text">GFW: The Digital Berlin Wall of China</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-Brief-Introduction"><span class="nav-number">2.</span> <span class="nav-text">A Brief Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Filtering"><span class="nav-number">2.1.</span> <span class="nav-text">Filtering</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Probing"><span class="nav-number">2.2.</span> <span class="nav-text">Probing</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Walls-Are-Closing-In"><span class="nav-number">3.</span> <span class="nav-text">The Walls Are Closing In</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#And-Another-Thing"><span class="nav-number">3.1.</span> <span class="nav-text">And Another Thing</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#References"><span class="nav-number"></span> <span class="nav-text">References</span></a></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Elisa Tsai</p>
+  <div class="site-description" itemprop="description">I comment my code</div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">tags</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="feed-link motion-element">
+    <a href="/rss2.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/E-Tsai" title="GitHub &rarr; https://github.com/E-Tsai" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:etsai042@gmail.com" title="E-Mail &rarr; mailto:etsai042@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://t.me/ElisaTsai" title="Telegram &rarr; https://t.me/ElisaTsai" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Telegram</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.linkedin.com/in/elisa-tsai-8b0170142/" title="LinkedIn &rarr; https://www.linkedin.com/in/elisa-tsai-8b0170142/" rel="noopener" target="_blank"><i class="fa fa-fw fa-vk"></i>LinkedIn</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.instagram.com/elisatdraws/" title="Insta &rarr; https://www.instagram.com/elisatdraws/" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i>Insta</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://steamcommunity.com/id/elisatsai/" title="Steam &rarr; https://steamcommunity.com/id/elisatsai/" rel="noopener" target="_blank"><i class="fa fa-fw fa-skype"></i>Steam</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Elisa Tsai</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.0</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
