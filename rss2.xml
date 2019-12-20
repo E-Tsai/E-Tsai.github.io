@@ -8,8 +8,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I comment my code</description>
-    <pubDate>Sun, 01 Dec 2019 05:45:19 GMT</pubDate>
+    <pubDate>Fri, 20 Dec 2019 05:01:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>中文翻唱</title>
+      <link>https://etsai.site/several-chinese-songs/</link>
+      <guid>https://etsai.site/several-chinese-songs/</guid>
+      <pubDate>Fri, 20 Dec 2019 04:56:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;几首中文翻唱。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/several-chinese-songs/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Spectres And Meltdown</title>
@@ -33,7 +48,7 @@
       <pubDate>Thu, 21 Nov 2019 05:08:55 GMT</pubDate>
       <description>
       
-        &lt;h2 id=&quot;GFW-The-Digital-Berlin-Wall-of-China&quot;&gt;&lt;a href=&quot;#GFW-The-Digital-Berlin-Wall-of-China&quot; class=&quot;headerlink&quot; title=&quot;GFW: The Digital Berlin Wall of China&quot;&gt;&lt;/a&gt;GFW: The Digital Berlin Wall of China&lt;/h2&gt;&lt;p&gt;On September 20, 1987, the first email from China wrote: “Across the Great Wall we can reach every corner in the world.”&lt;/p&gt;
+        &lt;p&gt;On September 20, 1987, the first email from China wrote: “Across the Great Wall we can reach every corner in the world.”&lt;/p&gt;
 &lt;p&gt;The prophecy has unfortunately come true.&lt;/p&gt;
       
       </description>
@@ -146,21 +161,6 @@
       
       
       <comments>https://etsai.site/your-first-linux-kernel-patch/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Linux内核补丁的哲学</title>
-      <link>https://etsai.site/philosophy-of-linux-kernel-patches/</link>
-      <guid>https://etsai.site/philosophy-of-linux-kernel-patches/</guid>
-      <pubDate>Mon, 11 Mar 2019 02:38:22 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;a href=&quot;https://kernelnewbies.org/PatchPhilosophy&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;英文原文&lt;/a&gt;&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>https://etsai.site/philosophy-of-linux-kernel-patches/#disqus_thread</comments>
     </item>
     
   </channel>
