@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I comment my code</description>
-    <pubDate>Fri, 20 Dec 2019 05:01:00 GMT</pubDate>
+    <pubDate>Tue, 31 Dec 2019 15:12:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>人造谎言 (Man-made Lies)</title>
+      <link>https://etsai.site/man-made-lies/</link>
+      <guid>https://etsai.site/man-made-lies/</guid>
+      <pubDate>Tue, 31 Dec 2019 14:57:32 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;火山喷出熔岩，大陆板块移位，山脉落下又升起；&lt;/p&gt;
+&lt;p&gt;繁星点点，明亮闪烁，在夜空中驻足了亿万年；&lt;/p&gt;
+&lt;p&gt;它们比教堂的钟声更加宏伟。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/man-made-lies/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>中文翻唱</title>
@@ -146,21 +163,6 @@
       
       
       <comments>https://etsai.site/Total-Perspective-Vortex-EN/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>你的第一个Linux内核补丁</title>
-      <link>https://etsai.site/your-first-linux-kernel-patch/</link>
-      <guid>https://etsai.site/your-first-linux-kernel-patch/</guid>
-      <pubDate>Thu, 18 Apr 2019 02:17:15 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;这是一个linux内核补丁提交教程，其中有不少内容来自&lt;a href=&quot;https://kernelnewbies.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kernel Newbies&lt;/a&gt;，也有部分自己创作的。&lt;br&gt;书籍推荐: &lt;a href=&quot;https://lwn.net/Kernel/LDD3/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Linux Device Drivers&lt;/a&gt;&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>https://etsai.site/your-first-linux-kernel-patch/#disqus_thread</comments>
     </item>
     
   </channel>
