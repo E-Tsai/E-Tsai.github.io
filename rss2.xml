@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I comment my code</description>
-    <pubDate>Tue, 31 Dec 2019 15:12:34 GMT</pubDate>
+    <pubDate>Wed, 29 Jan 2020 02:25:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,7 +18,8 @@
       <pubDate>Wed, 01 Jan 2020 03:57:32 GMT</pubDate>
       <description>
       
-        &lt;p&gt;火山喷出熔岩，大陆板块移位，山脉落下又升起；&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-CN%2FEN-green&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;火山喷出熔岩，大陆板块移位，山脉落下又升起；&lt;/p&gt;
 &lt;p&gt;繁星点点，明亮闪烁，在夜空中驻足了亿万年；&lt;/p&gt;
 &lt;p&gt;它们比教堂的钟声更加宏伟。&lt;/p&gt;
       
@@ -35,7 +36,8 @@
       <pubDate>Fri, 20 Dec 2019 17:56:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;几首中文翻唱。&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-CN-orange&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;几首中文翻唱。&lt;/p&gt;
       
       </description>
       
@@ -50,7 +52,8 @@
       <pubDate>Thu, 21 Nov 2019 18:17:58 GMT</pubDate>
       <description>
       
-        &lt;p&gt;从流水线 (pipeline) 到乱序执行 (out-of-order)，处理器的指令级并行保证了其性能上的绝大提升。但是在性能提升的同时，安全性的问题也随之出现。这篇博客主要介绍预测执行攻击。&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-CN-orange&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;从流水线 (pipeline) 到乱序执行 (out-of-order)，处理器的指令级并行保证了其性能上的绝大提升。但是在性能提升的同时，安全性的问题也随之出现。这篇博客主要介绍预测执行攻击。&lt;/p&gt;
       
       </description>
       
@@ -65,7 +68,8 @@
       <pubDate>Sun, 03 Nov 2019 02:58:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;写给我的三只猫：黑黑，花花和汤圆。&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-CN%2FEN-green&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;写给我的三只猫：黑黑，花花和汤圆。&lt;/p&gt;
 &lt;p&gt;An Acapella rearrangement.&lt;/p&gt;
       
       </description>
@@ -81,7 +85,8 @@
       <pubDate>Tue, 24 Sep 2019 21:16:16 GMT</pubDate>
       <description>
       
-        &lt;p&gt;An alignment chart of source code found online. &lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-EN-blue&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;An alignment chart of source code found online. &lt;/p&gt;
       
       </description>
       
@@ -96,7 +101,8 @@
       <pubDate>Sun, 22 Sep 2019 06:02:07 GMT</pubDate>
       <description>
       
-        &lt;p&gt;Fork和它的变体是Unix系统创建进程 (process) 的方法，在这篇文章里我们会探索它是如何实现的。&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-CN-orange&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;Fork和它的变体是Unix系统创建进程 (process) 的方法，在这篇文章里我们会探索它是如何实现的。&lt;/p&gt;
       
       </description>
       
@@ -111,7 +117,8 @@
       <pubDate>Fri, 13 Sep 2019 04:06:13 GMT</pubDate>
       <description>
       
-        &lt;p&gt;写给我的三只猫：黑黑，花花和汤圆。&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-CN%2FEN-green&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;写给我的三只猫：黑黑，花花和汤圆。&lt;/p&gt;
       
       </description>
       
@@ -126,7 +133,8 @@
       <pubDate>Fri, 13 Sep 2019 03:33:32 GMT</pubDate>
       <description>
       
-        &lt;p&gt;I come back to watch these videos every time I feel uneasy, anxious or upset about certain trivial life events…&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-EN-blue&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;I come back to watch these videos every time I feel uneasy, anxious or upset about certain trivial life events…&lt;/p&gt;
       
       </description>
       
@@ -141,7 +149,8 @@
       <pubDate>Thu, 05 Sep 2019 23:33:57 GMT</pubDate>
       <description>
       
-        &lt;p&gt;Adapted from sci-fi: Restaurant at the End of the Universe, chapter 10 and chapter 11.&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-EN-blue&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;Adapted from sci-fi: Restaurant at the End of the Universe, chapter 10 and chapter 11.&lt;/p&gt;
       
       </description>
       
@@ -156,7 +165,8 @@
       <pubDate>Thu, 18 Apr 2019 14:17:15 GMT</pubDate>
       <description>
       
-        &lt;p&gt;这是一个linux内核补丁提交教程，其中有不少内容来自&lt;a href=&quot;https://kernelnewbies.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kernel Newbies&lt;/a&gt;，也有部分自己创作的。&lt;br&gt;书籍推荐: &lt;a href=&quot;https://lwn.net/Kernel/LDD3/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Linux Device Drivers&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-CN-orange&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;这是一个linux内核补丁提交教程，其中有不少内容来自&lt;a href=&quot;https://kernelnewbies.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kernel Newbies&lt;/a&gt;，也有部分自己创作的。&lt;br&gt;书籍推荐: &lt;a href=&quot;https://lwn.net/Kernel/LDD3/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Linux Device Drivers&lt;/a&gt;&lt;/p&gt;
       
       </description>
       

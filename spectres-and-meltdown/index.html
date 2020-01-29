@@ -64,6 +64,7 @@
 <meta property="og:site_name" content="So Long">
 <meta property="og:description" content="从流水线 (pipeline) 到乱序执行 (out-of-order)，处理器的指令级并行保证了其性能上的绝大提升。但是在性能提升的同时，安全性的问题也随之出现。这篇博客主要介绍预测执行攻击。">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://img.shields.io/badge/Lan-CN-orange">
 <meta property="og:image" content="http://renesasrulz.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-00-67/RX_5F00_pipeline_5F00_550.gif">
 <meta property="og:image" content="https://www.researchgate.net/profile/Dimitris_Kehagias/publication/318502489/figure/fig1/AS:533824906170368@1504285183057/1-The-basic-structure-of-a-MIPS-floating-point-unit-using-Tomasulos-algorithm.png">
 <meta property="og:image" content="https://miro.medium.com/max/3598/1*-EkJxntbntPppqfPgTjbWg.png">
@@ -72,11 +73,11 @@
 <meta property="og:image" content="https://miro.medium.com/max/751/1*xPqqyrbiNO7yrAsu9_VxWw.png">
 <meta property="og:image" content="https://miro.medium.com/max/3601/1*ESJwtRksgWYNWL95sW9mPw.png">
 <meta property="og:image" content="https://etsai.site/spectres-and-meltdown/Spectres.jpg">
-<meta property="og:updated_time" content="2019-12-01T05:45:19.631Z">
+<meta property="og:updated_time" content="2020-01-29T02:23:30.679Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spectres And Meltdown">
 <meta name="twitter:description" content="从流水线 (pipeline) 到乱序执行 (out-of-order)，处理器的指令级并行保证了其性能上的绝大提升。但是在性能提升的同时，安全性的问题也随之出现。这篇博客主要介绍预测执行攻击。">
-<meta name="twitter:image" content="http://renesasrulz.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-00-67/RX_5F00_pipeline_5F00_550.gif">
+<meta name="twitter:image" content="https://img.shields.io/badge/Lan-CN-orange">
   <link rel="canonical" href="https://etsai.site/spectres-and-meltdown/">
 
 
@@ -249,7 +250,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-01 00:45:19" itemprop="dateModified" datetime="2019-12-01T00:45:19-05:00">2019-12-01</time>
+                <time title="Modified: 2020-01-28 21:23:30" itemprop="dateModified" datetime="2020-01-28T21:23:30-05:00">2020-01-28</time>
               </span>
             
           
@@ -278,7 +279,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>从流水线 (pipeline) 到乱序执行 (out-of-order)，处理器的指令级并行保证了其性能上的绝大提升。但是在性能提升的同时，安全性的问题也随之出现。这篇博客主要介绍预测执行攻击。</p>
+        <p><img src="https://img.shields.io/badge/Lan-CN-orange" alt></p>
+<p>从流水线 (pipeline) 到乱序执行 (out-of-order)，处理器的指令级并行保证了其性能上的绝大提升。但是在性能提升的同时，安全性的问题也随之出现。这篇博客主要介绍预测执行攻击。</p>
 <a id="more"></a>
 
 <p>本文是在USTCLUG weekly party上的讲稿，直接使用了很多博客里的图片，引用源都列在了参考章节。</p>

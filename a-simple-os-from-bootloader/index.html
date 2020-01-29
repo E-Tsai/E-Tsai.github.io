@@ -64,14 +64,15 @@
 <meta property="og:site_name" content="So Long">
 <meta property="og:description" content="前言&amp;amp;工具&amp;emsp; 我使用的是AT&amp;amp;T语法汇编，使用GCC编译，在qemu上跑这个简易的操作系统。GCC要求汇编代码是AT&amp;amp;T格式的，如果使用你想使用NASM编译的话，则可以使用intel语法。ld是GNU汇编器的链接器，GNU汇编器使用 AT&amp;amp;T 样式的语法。">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://img.shields.io/badge/Lan-CN-orange">
 <meta property="og:image" content="http://drive.google.com/uc?export=view&id=0B_0Ovo-1o-jAUk9zLUlaSGNSajg">
 <meta property="og:image" content="http://drive.google.com/uc?export=view&id=0B_0Ovo-1o-jAcVo2dFAyUk94RUk">
 <meta property="og:image" content="http://drive.google.com/uc?export=view&id=0B_0Ovo-1o-jAUk9zLUlaSGNSajg">
-<meta property="og:updated_time" content="2019-09-25T00:23:50.559Z">
+<meta property="og:updated_time" content="2020-01-29T02:18:37.866Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从启动盘开始写一个简易操作系统">
 <meta name="twitter:description" content="前言&amp;amp;工具&amp;emsp; 我使用的是AT&amp;amp;T语法汇编，使用GCC编译，在qemu上跑这个简易的操作系统。GCC要求汇编代码是AT&amp;amp;T格式的，如果使用你想使用NASM编译的话，则可以使用intel语法。ld是GNU汇编器的链接器，GNU汇编器使用 AT&amp;amp;T 样式的语法。">
-<meta name="twitter:image" content="http://drive.google.com/uc?export=view&id=0B_0Ovo-1o-jAUk9zLUlaSGNSajg">
+<meta name="twitter:image" content="https://img.shields.io/badge/Lan-CN-orange">
   <link rel="canonical" href="https://etsai.site/a-simple-os-from-bootloader/">
 
 
@@ -244,7 +245,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-09-24 20:23:50" itemprop="dateModified" datetime="2019-09-24T20:23:50-04:00">2019-09-24</time>
+                <time title="Modified: 2020-01-28 21:18:37" itemprop="dateModified" datetime="2020-01-28T21:18:37-05:00">2020-01-28</time>
               </span>
             
           
@@ -273,7 +274,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="前言-amp-工具"><a href="#前言-amp-工具" class="headerlink" title="前言&amp;工具"></a>前言&amp;工具</h2><p>&emsp; 我使用的是AT&amp;T语法汇编，使用GCC编译，在qemu上跑这个简易的操作系统。GCC要求汇编代码是AT&amp;T格式的，如果使用你想使用NASM编译的话，则可以使用intel语法。ld是GNU汇编器的链接器，GNU汇编器使用 AT&amp;T 样式的语法。</p>
+        <p><img src="https://img.shields.io/badge/Lan-CN-orange" alt></p>
+<h2 id="前言-amp-工具"><a href="#前言-amp-工具" class="headerlink" title="前言&amp;工具"></a>前言&amp;工具</h2><p>&emsp; 我使用的是AT&amp;T语法汇编，使用GCC编译，在qemu上跑这个简易的操作系统。GCC要求汇编代码是AT&amp;T格式的，如果使用你想使用NASM编译的话，则可以使用intel语法。ld是GNU汇编器的链接器，GNU汇编器使用 AT&amp;T 样式的语法。</p>
  <a id="more"></a>
 
 <p>&emsp; <strong>书籍推荐</strong>： <a href>《Orange’s : 一个操作系统的实现》</a> ， 这本书使用的是intel语法，非常详细地讲述了如何从一个启动盘写到一个具有进程调度、内存管理、文件系统、输入输出系统和进程间通信功能的os。书后附有代码，即使只是阅读代码也能有很多收获。</p>
