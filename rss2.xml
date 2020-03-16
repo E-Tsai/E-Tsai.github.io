@@ -8,8 +8,24 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>I comment my code</description>
-    <pubDate>Tue, 10 Mar 2020 04:03:47 GMT</pubDate>
+    <pubDate>Mon, 16 Mar 2020 21:44:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>蚂蚁</title>
+      <link>https://etsai.site/the-ants/</link>
+      <guid>https://etsai.site/the-ants/</guid>
+      <pubDate>Mon, 16 Mar 2020 21:02:13 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-CN%2FEN-green&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;故事发生在一个阳光明媚的下午 ，我坐在某个地方看书。就在我快睡着的时候 ，一个声音传来：“打扰了，这是做什么的？”&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://etsai.site/the-ants/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>妇女节快乐</title>
@@ -153,22 +169,6 @@
       
       
       <comments>https://etsai.site/Hakuna-Matata/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Total Perspective Vortex</title>
-      <link>https://etsai.site/Total-Perspective-Vortex-EN/</link>
-      <guid>https://etsai.site/Total-Perspective-Vortex-EN/</guid>
-      <pubDate>Thu, 05 Sep 2019 23:33:57 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/Lan-EN-blue&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;Adapted from sci-fi: Restaurant at the End of the Universe, chapter 10 and chapter 11.&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>https://etsai.site/Total-Perspective-Vortex-EN/#disqus_thread</comments>
     </item>
     
   </channel>
